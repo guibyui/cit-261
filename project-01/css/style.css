@@ -1,0 +1,104 @@
+* {
+   font-family: 'Times New Roman', Times, serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+#date{
+   position: absolute;
+   bottom: 10px;
+   left: 10px;
+   color: #FFF;
+   font-size: 25px;
+   font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+   background: #f4f4f4;
+}
+
+.phone {
+   position: relative;
+   margin: 4% auto;
+   width: 360px;
+   height: 580px;
+   border: 1px solid #e6e6e6;
+   border-radius: 8px;
+   overflow: hidden;
+   background: #fff;
+}
+
+.header {
+   position: relative;
+   padding: 25px;
+   width: 100%;
+   background: linear-gradient(to right, #6e4eff, #19005e);
+   color: #ffffff;
+   line-height: 48px;
+   text-align: center;
+}
+
+.greet {
+   font-size: 50px;
+}
+
+.removeText {
+   font-weight: bolder;
+   cursor: pointer;
+   padding: 2px 15px;
+   display: inline;
+   border-radius: 30px;
+   text-align: center;
+   border: 1px solid #fff;
+}
+
+.header p {
+   font-size: 14px;
+}
+
+.body {
+   position: relative;
+   width: 100%;
+   height: 500px;
+   overflow-y: scroll;
+}
+
+.body::-webkit-scrollbar {
+   background: transparent;
+   width: 1px;
+}
+
+.list {
+   list-style: none;
+}
+
+.list .item {
+   padding: 20px;
+   border-bottom: 1px solid #505050;
+   color: #000000;
+}
+
+.item.checked {
+   text-decoration: line-through;
+}
+
+input[type="checkbox"] {
+   position: relative;
+   top: 3px;
+   margin-right: 10px;
+   width: 17px;
+   height: 17px;
+
+}
+
+.input {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   padding: 20px;
+   width: 100%;
+   border: 0;
+   border-top: 1px solid #e7e7e7;
+}

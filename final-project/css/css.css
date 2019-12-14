@@ -1,0 +1,421 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+      /* background-color: #FFD700; */
+
+    /* background-image: url(images/best-movies-on-netflix.jpg); */
+    /* background-size: cover; */
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: "Exo", sans-serif;
+    color: #fff;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* .container {
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    text-align: center;
+} */
+
+h1 {
+    font-weight: 300;
+}
+
+h3 {
+    color: #eee;
+    font-weight: 100;
+}
+
+h5 {
+    color: #eee;
+    font-weight: 300;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: #ddd;
+}
+
+
+#content-area {
+    background-color: white;
+    margin: 0 auto;
+    max-width: 90%;
+    align-items: center;
+}
+
+#movies-searchable {
+    margin-top: 20px;
+}
+
+#movies-container {
+    align-content: center;
+}
+
+#logo1 {
+    height: 50px;
+}
+
+#logo2 {
+    height: 50px;
+}
+
+#logo3 {
+    height: 50px;
+}
+
+#logo4 {
+    height: 50px;
+}
+
+#logo5 {
+    height: 50px;
+}
+
+#content-area {
+    max-width: 80%;
+}
+
+#content-area {
+    max-width: 90%;
+}
+
+#content-area {
+    background-color: white;
+    margin: 0 auto;
+}
+
+.nav-full {
+    margin-top: 10%;
+}
+
+section {
+    /* display: flex; */
+    width: 100%;
+    overflow-x: auto;
+    padding-top: 70px;
+
+
+}
+
+
+
+section img {
+    width: 300px;
+    transition: 250ms all;
+}
+
+img:hover {
+    margin-left: 0 40px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.content {
+    /* border: 3px solid blue; */
+    display: none;
+}
+
+.content div {
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10 px;
+}
+
+.content-display {
+    display: block;
+}
+
+#content-close{
+    position: absolute;
+    cursor: pointer;
+    padding-left: 5px;
+
+}
+
+
+/*  This is the css from the form sheet */
+
+h1{
+    text-align: center;
+}
+body{
+    background-color: LightGrey;
+}
+input{
+    margin-top: 5px;
+  border:none; 
+  border-radius:5px; 
+  box-shadow:0px 0px 5px #666666 inset; 
+  height:25px;
+  width:200px; 
+  text-indent:5px; 
+} 
+input:focus { 
+  outline:none;
+}
+textarea{
+  margin-top: 10px;
+  border:none; 
+  border-radius:5px; 
+  box-shadow:0px 0px 5px #666666 inset;
+  /* width:99.5%; */
+  height: 150px; 
+  text-indent:5px; 
+    resize:none;
+    overflow: scroll;
+}
+#note_entry_area{
+    width: auto;
+    padding-left: 5px;
+  border:none; 
+  border-radius:5px; 
+  box-shadow:0px 0px 5px #666666 inset; 
+  text-indent:5px; 
+  background-color: rgba(255, 90, 90, 0.4);
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+fieldset, label { margin: 0; padding: 0; }
+body{ margin: 20px; }
+h1 { font-size: 1.5em; margin: 10px; }
+
+/** Style Star Rating Widget ***/
+
+.rating { 
+border: none;
+float: left;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+margin: 5px;
+font-size: 1.25em;
+font-family: FontAwesome;
+display: inline-block;
+content: "\f005";
+}
+
+.rating > .half:before { 
+content: "\f089";
+position: absolute;
+}
+
+.rating > label { 
+color: #ddd; 
+float: right; 
+}
+
+/** CSS Magic to Highlight Stars on Hover **/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+
+
+   ::-webkit-scrollbar {
+       width: 12px;
+   }
+
+   ::-webkit-scrollbar-track {
+       display: none;
+   }
+
+
+   .header_style {
+    color: white;
+  text-shadow: -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+  font-size: 6.0em;
+}
+
+.form_style{
+      position: absolute;
+      left: 50%;
+      top: 18%;
+
+      transform: translate(-50%, -50%);
+}
+
+#content-close {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+body{
+    width: 98%;
+}
+
+    textarea {
+        width: 100%;
+    }
+
+
+
+
+
+@media only screen and (max-width: 450px) {
+    section img {
+        width: 150px;
+        transition: 250ms all;
+    }
+    #content-close {
+        position: relative;
+        padding-left: 10px;
+
+    }
+
+    body{
+        width: 90%;
+    }
+
+    textarea{
+        width: 98%;
+    }
+
+    section{
+        padding-top: 0px;
+    }
+
+    #movies-searchable{
+        margin-top: 0px;    
+    }
+    .header_style{
+        font-size: 2.0em;
+        text-align:start;
+    }
+
+    .form_style{
+        /* left: 145px; */
+        position: relative;
+    }
+
+
+}
+
+@media screen and (max-width: 1550px) and (min-width: 901px) {
+    #content-close {
+        position: inherit;
+        padding-left: 10px;
+    }
+    body{
+        width:96%;
+    }
+}
+
+
+@media screen and (max-width: 900px) and (min-width: 600px){
+/* @media only screen and (max-width: 700px) { */
+    section img {
+        width: 200px;
+        transition: 250ms all;
+    }
+
+    body {
+        width: 96%;
+    }
+
+    section {
+        padding-top: 70px;
+    }
+
+    #content-close {
+        position: inherit;
+        padding-left: 10px;
+    }
+
+    /* #movies-searchable {
+        margin-top: 0px;
+    } */
+
+    .header_style {
+        font-size: 4.0em;
+        /* text-align: start; */
+    }
+
+    .form_style {
+        left: 145px;
+        position: absolute;
+        top: 15%;
+    }
+
+
+}
+
+@media screen and (max-width: 599px) and (min-width: 451px) {
+
+    /* @media only screen and (max-width: 700px) { */
+    section img {
+        width: 200px;
+        transition: 250ms all;
+    }
+
+    section {
+        padding-top: 70px;
+    }
+
+    /* #movies-searchable {
+        margin-top: 0px;
+    } */
+
+    .header_style {
+        font-size: 2.5em;
+        /* text-align: start; */
+    }
+
+    .form_style {
+        left: 145px;
+        position: absolute;
+        top: 13%;
+    }
+
+    #content-close {
+        position: relative;
+        padding-left: 10px;
+    }
+
+    body {
+        width: 94%;
+    }
+
+
+}

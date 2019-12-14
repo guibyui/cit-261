@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/css.css" />
+
+
+	<title>Review Page!</title>
+
+	<script>
+		// saving my review page
+		function saveNote() {
+			var currentDateAndTime = new Date()
+			var aNoteDescription = document.getElementById("description_input").value
+			var aNoteText = document.getElementById("note_editor").value
+			var aCompleteNote = currentDateAndTime.toLocaleString() + "--" + aNoteDescription
+			aCompleteNote += "<p>" + aNoteText + "</p>"
+
+			var storedNotesString = localStorage.getItem(window.location.href)
+			var allNotes = JSON.parse(storedNotesString)
+			if (allNotes == null) {
+				allNotes = []
+			}
+			allNotes.push(aCompleteNote)
+			var allNotesString = JSON.stringify(allNotes)
+			localStorage.setItem(window.location.href, allNotesString)
+			showAllNotes()
+			document.getElementById("description_input").value = null
+			document.getElementById("note_editor").value = null
+		}
+		// displaying the note!
+		function showAllNotes() {
+			var storedNotesString = localStorage.getItem(window.location.href)
+
+			allNotes = JSON.parse(storedNotesString)
+			if (allNotes != null) {
+				var noteDisplayer = document.getElementById("all_notes_display")
+				noteDisplayer.innerHTML = null
+				var numberOfNotes = allNotes.length
+				for (var i = 0; i < allNotes.length; i++) {
+					var aNote = allNotes[i]
+					noteDisplayer.innerHTML += "<hr><p>" + aNote + "</p>"
+				}
+			}
+		}
+		function deleteAllReviews()
+{
+    localStorage.setItem(window.location.href, "[]");
+    showAllNotes();
+}
+	</script>
+
+</head>
+
+<body onload="showAllNotes();show_image();show_TrailerMovies();">
+	<h1>Give us your opinion!</h1>
+	
+	<div id="imageDiv"></div>
+	<div id="trailers"></div>
+	<div id="note_entry_area">
+
+		<h1>Please add your review!</h1>
+
+		<!-- making review stars -->
+		<fieldset class="rating">
+			<input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5"
+				title="Awesome - 5 stars"></label>
+			<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half"
+				title="Pretty good - 4.5 stars"></label>
+			<input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4"
+				title="Pretty good - 4 stars"></label>
+			<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half"
+				title="Meh - 3.5 stars"></label>
+			<input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3"
+				title="Meh - 3 stars"></label>
+			<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half"
+				title="Kinda bad - 2.5 stars"></label>
+			<input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2"
+				title="Kinda bad - 2 stars"></label>
+			<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half"
+				title="Meh - 1.5 stars"></label>
+			<input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1"
+				title="Sucks big time - 1 star"></label>
+			<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf"
+				title="Sucks big time - 0.5 stars"></label>
+		</fieldset><br><br>
+
+		Add Your Name: <input id="description_input"></input>
+
+		<textarea id="note_editor" placeholder="Note it down. Don't forget."></textarea>
+
+		<br>
+		<button onclick="saveNote()">Save</button>
+		<button onclick="window.history.back()">Bo Back to Movie options</button>
+        <button onclick="deleteAllReviews()">Delete All Reviews</button>
+		<div id="all_notes_display"></div>
+	</div>
+	
+
+	<!-- <script src="js/videoApi.js"></script> -->
+	<script src="js/review-image.js"></script>
+	<script src="js/movieApi.js"></script>
+	<script src="js/videoApi.js"></script>
+</body>
+
+</html>
