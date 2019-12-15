@@ -1,0 +1,299 @@
+button:hover {
+	cursor: 				pointer;
+}
+
+html {
+	background-color:      #EEF0F2;
+}
+
+h1 {
+	text-decoration:       underline;
+	font-size:             6vh;
+	text-align:            center;
+}
+
+p {
+	width:                 40vw;
+	background-color:      #DADDD8;
+	margin:                auto;
+	padding:               10px;
+	border-radius:         5px;
+	line-height:           1.7;
+}
+
+#dailyReadingList {
+	text-align:            	left;
+	list-style-type:       	none;
+	line-height: 			1.4em;
+}
+
+.dailyReading {
+	color:                 	black;
+	text-decoration:       	none;
+	line-height: 			1.4em;
+}
+
+.dailyReading:hover {
+	cursor:					pointer;
+	color: 					red;
+}
+
+#textArea{
+	display: 				block;
+	position: 				fixed;
+	top: 					10vh;
+	right: 					5vw;
+	border: 				10px 10px 10px 10px;
+	border-style: 			double;
+	height: 				80vh;
+	width:					30vw;
+}
+
+#legend {
+	padding:5px 10px 5px 10px; 
+	border:solid;
+	border-width: 1px; 
+	color: white; 
+	background-color: black; 
+	font-size:30px; 
+	border-radius: 50%;
+	user-select: none;
+}
+
+h2 {
+	text-align: 				left;
+}
+
+#noteName {
+	text-align:					center;
+	width: 						50%;
+	padding:					1px;
+}
+
+#footer {
+	position:              fixed;
+	width:                 100vw;
+	background-color:      #DADDD8;
+	padding:               10px;
+	bottom:                -5px;
+	border-radius:         5px;
+	border:                solid;
+	border-color:          #1C1C1C;
+	font-style:            italic;
+	text-align:            center;
+}
+
+#notes {
+	 margin:				0 auto;
+	 resize:				none;
+	 width:					90%;
+	 height:				80%;
+	 display:				block;
+	 background-color:		lightyellow;
+}
+
+		.hsdivinit {
+			display: inline-block;
+			position: fixed;
+			/*margin: 0 auto;*/
+			padding: 10px 15px;
+			transition: all 1s cubic-bezier(.25, .8, .25, 1);
+			background: #34495e;
+			left: 50%;
+			bottom: -200px;
+			transform: translate(-50%, -50%);
+			color: #fff;
+			/*opacity: 0;*/
+			border-radius: 3px;
+			font-family: 'Jaldi', sans-serif;
+
+		}
+
+		.hsdivshow {
+			-webkit-animation: hsshowpulse .5s ease both;
+		}
+
+		@-webkit-keyframes hsshowpulse {
+			0% {
+				opacity: 1;
+				bottom: -100px;
+			}
+			100% {
+				opacity: 1;
+				bottom: 20px;
+			}
+		}
+
+		.hsdivhide {
+			-webkit-animation: hshidepulse .3s ease both;
+		}
+
+		@-webkit-keyframes hshidepulse {
+			0% {
+				opacity: 1;
+				bottom: 20px;
+			}
+			100% {
+				opacity: 0;
+				bottom: -100px;
+			}
+		}
+
+		.hsdone {
+			font-size: 15px;
+			padding: 10px;
+			background:#2ecc71;
+			color: #FFF;
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			/* color: #444; */
+			text-align: center;
+			border-radius: 50%;
+			box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+		}
+
+		.hswarning {
+			font-size: 15px;
+			padding: 10px;
+			background: #f1c40f;
+			color: #fff;
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			/* color: #444; */
+			text-align: center;
+			border-radius: 50%;
+			box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+		}
+
+		.hserror {
+			font-size: 15px;
+			padding: 10px;
+			background: #e74c3c;
+			color: #fff;
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			/* color: #444; */
+			text-align: center;
+			border-radius: 50%;
+			box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+		}		
+		.hsheart {
+			font-size: 15px;
+			padding: 10px;
+			background: #fff;
+			color: #e74c3c;
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			/* color: #444; */
+			text-align: center;
+			border-radius: 50%;
+			box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+		}
+		.hssad {
+			font-size: 15px;
+			padding: 10px;
+			background: #ecf0f1;
+			color: #d35400;
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			/* color: #444; */
+			text-align: center;
+			font-weight: 600;
+			border-radius: 50%;
+			box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+		}
+		.hstext{
+			padding: 0 10px;
+			font-size: 20px;
+			line-height: 20px;
+		}
+
+
+@media only screen and (max-width: 600px) {
+	#textArea{
+		display: 				block;
+		position: 				fixed;
+		border: 				10px 10px 10px 10px;
+		background-color: 		#EEF0F2;
+		border-style: 			double;
+		height: 				46vh;
+		width:					95vw;
+		line-height: 			1.2em;
+		right: 					0px;
+		top: 					53.6vh;
+	}
+
+	#noteName {
+		width:					90%;
+		font-size: 				160%;
+	}
+
+	body {
+		font-size: 				50%;
+		line-height: 			1.9em;
+	}
+
+	button {
+		margin: 				0 auto;
+		margin-top:	 			4px;
+		display: 				block;
+		justify-content: 		center;
+		line-height: 			1em;
+		transform: 				scale(.9);
+	}
+
+	#legend {
+		font-size: 				15px;
+		border-radius: 			0%;
+	}
+
+	body #notes {
+		height: 				55%;
+		font-size: 				8px;
+	}
+
+	body #notes:focus {
+		background-color: 		red;
+		transform: 				translateY(-30vh);
+	}
+
+	#notes:focus {
+		background-color: 		red;
+		transform: 				translateY(-30vh);
+	}
+
+	#deviceHeader{
+		position: 				fixed;
+		font-size: 				13px;
+		transform: 				translateY(-14vh);
+		background-color: 		#EEF0F2;
+		padding:				20px 30vw 2px 30vw;
+	}
+
+	#deviceHeader h2 {
+
+	}
+
+	#finalLink {
+		margin-bottom: 			290px;
+	}
+
+	#textAreaBG {
+		background-color:		#EEF0F2;
+		z-index: 				-1;
+	}
+
+	#firstLink {
+		margin-bottom:			12vh;
+	}
+
+	.dailyReading {
+		font-size: 				250%;
+		line-height: 			2em;
+	}
+}

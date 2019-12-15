@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Reading Organizer</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="reading.js"></script>
+	<style type="text/css">
+		#dailyReadingList {
+			text-align:            	left;
+			list-style-type:       	none;
+			line-height: 			1.4em;
+		}
+
+		.dailyReading {
+			color:                 	black;
+			text-decoration:       	none;
+		}
+
+		.dailyReading:hover {
+			cursor:					pointer;
+		}
+	</style>
+</head>
+<div id="deviceHeader">
+	<h2>40 Days - Book of Mormon Personal Study</h2>
+</div>
+<body>
+	<div id="firstLink"></div>
+		<span class="dailyReading"> Day 1 ....... 1 Nephi 1-8</span><br>
+		<span class="dailyReading"> Day 2 ....... 1 Nephi 9-15</span><br>
+		<span class="dailyReading"> Day 3 ....... 1 Nephi 16-20</span><br>
+		<span class="dailyReading"> Day 4 ....... 1 Nephi 21-2 Nephi 3</span><br>
+		<span class="dailyReading"> Day 5 ....... 2 Nephi 4-9</span><br>
+		<span class="dailyReading"> Day 6 ....... 2 Nephi 10-19</span><br>
+		<span class="dailyReading"> Day 7 ....... 2 Nephi 20-26</span><br>
+		<span class="dailyReading"> Day 8 ....... 2 Nephi 27-33</span><br>
+		<span class="dailyReading"> Day 9 ....... Jacob 1-5</span><br>
+		<span class="dailyReading"> Day 10 ..... Jacob 6-WoM</span><br>
+		<span class="dailyReading"> Day 11 ..... Mosiah 1-6</span><br>
+		<span class="dailyReading"> Day 12 ..... Mosiah 7-12</span><br>
+		<span class="dailyReading"> Day 13 ..... Mosiah 13-19</span><br>
+		<span class="dailyReading"> Day 14 ..... Mosiah 20-26</span><br>
+		<span class="dailyReading"> Day 15 ..... Mosiah 27-Alma 2</span><br>
+		<span class="dailyReading"> Day 16 ..... Alma 3-7</span><br>
+		<span class="dailyReading"> Day 17 ..... Alma 8-12</span><br>
+		<span class="dailyReading"> Day 18 ..... Alma 13-18</span><br>
+		<span class="dailyReading"> Day 19 ..... Alma 19-23</span><br>
+		<span class="dailyReading"> Day 20 ..... Alma 24-29</span><br>
+		<span class="dailyReading"> Day 21 ..... Alma 30-33</span><br>
+		<span class="dailyReading"> Day 22 ..... Alma 34-39</span><br>
+		<span class="dailyReading"> Day 23 ..... Alma 40-44</span><br>
+		<span class="dailyReading"> Day 24 ..... Alma 45-49</span><br>
+		<span class="dailyReading"> Day 25 ..... Alma 50-54</span><br>
+		<span class="dailyReading"> Day 26 ..... Alma 55-60</span><br>
+		<span class="dailyReading"> Day 27 ..... Alma 60-Helaman 3</span><br>
+		<span class="dailyReading"> Day 28 ..... Helaman 4-8</span><br>
+		<span class="dailyReading"> Day 29 ..... Helaman 9-14</span><br>
+		<span class="dailyReading"> Day 30 ..... Helaman 15-3 Nephi 5</span><br>
+		<span class="dailyReading"> Day 31 ..... 3 Nephi 6-12</span><br>
+		<span class="dailyReading"> Day 32 ..... 3 Nephi 13-19</span><br>
+		<span class="dailyReading"> Day 33 ..... 3 Nephi 20-27</span><br>
+		<span class="dailyReading"> Day 34 ..... 3 Nephi 28-4 Nephi</span><br>
+		<span class="dailyReading"> Day 35 ..... Mormon 1-4</span><br>
+		<span class="dailyReading"> Day 36 ..... Mormon 5-9</span><br>
+		<span class="dailyReading"> Day 37 ..... Ether 1-7</span><br>
+		<span class="dailyReading"> Day 38 ..... Ether 8-15</span><br>
+		<span class="dailyReading"> Day 39 ..... Moroni 1-8</span><br>
+		<span class="dailyReading"> Day 40 ..... Moroni 9-10</span>
+		<div id="finalLink"></div>
+		<div id="textAreaBG">
+			<fieldset id="textArea">
+				<legend id="legend">Notes</legend>
+				<button id="saveNote">
+					Save Note
+				</button>
+				<button id="copyNote" onclick="copyText()">
+					Copy to Clipboard
+				</button><br><br><p id="noteName">Select a Day</p><br>
+				<textarea id="notes" placeholder="Write notes here"></textarea>
+			</fieldset>
+		</div>
+</body>
+</html>

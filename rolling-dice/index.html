@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <!--        <link rel="stylesheet" href="../StackEffects/css/normalize.css" type="text/css"/>-->
+        <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+
+
+        <title>Race to 100</title>
+    </head>
+
+    <body onload="checkLocalStorage()">
+        <div class="wrapper clearfix">
+            <div class="flipWrapper">
+                <div class="front">
+                    <div class="panelFlip">
+                        <div class="player-0-panel active">
+                            <div class="player-name" id="name-0">Player 1</div>
+                            <div class="player-score" id="score-0">45</div>
+                            <div class="player-current-box" id="player-0-box">
+                                <div class="player-current-label" id="p0currentLabel">Current</div>
+                                <div class="player-current-score" id="current-0">11</div>
+                            </div>
+                            <button class="btn-roll" id="roll-0"><i id="ion-player-0" class="ion-ios-loop"></i>Roll dice</button> 
+                        </div>
+                    </div>
+                    <div class="panelFlip">
+                        <div class="progressBarWrapper">
+                            <div class="progressBars" id="player-0-progressBar"></div>
+                        </div>
+                        <div class="middleGround">
+                            <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+                            <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+                            <button class="btn-settings"><i class="ion-ios-settings-outline"></i>Settings</button>
+                            <img id="diceID" src="dice-5.png" alt="Dice" class="dice clearfix">
+                        </div>
+                        <div class="progressBarWrapper">
+                            <div class="progressBars" id="player-1-progressBar"></div>
+                        </div>
+                    </div>
+                    <div class="panelFlip">
+                        <div class="player-1-panel">
+                            <div class="player-name" id="name-1">Player 2</div>
+                            <div class="player-score" id="score-1">72</div>
+                            <div class="player-current-box" id="player-1-box">
+                                <div class="player-current-label" id="p1currentLabel">Current</div>
+                                <div class="player-current-score" id="current-1">0</div>
+                            </div>
+                            <button class="btn-roll" id="roll-1"><i id="ion-player-1" class="ion-ios-loop"></i>Roll dice</button>
+                        </div>
+                    </div>     
+                </div>
+                <div class="back">
+                    <div class="player-0-panel active">
+                        <span>Name:</span>
+                        <span><input id="p0NameInput" type="text" maxlength="8" size="18" value="Player 1"></span>
+                        <br>
+                        <span><button class="nameSave" type="submit" onClick="setPlayer0Name()">Save</button></span>
+                        <button class="nameClear" type="submit" onClick="clearPlayer0Name()">Clear</button>
+                        <br><br><br><br>
+                        <div class="playerColorSelector">
+                            <fieldset>
+                                <label for="p0Red">R</label>
+                                <input type="range" min="0" max="255" id="p0Red" step="1" value="235" onInput="playerColorChange()">
+                                <output for="p0Red" id="p0Red_out">235</output>
+                            </fieldset>
+                            <fieldset>
+                                <label for="p0Green">G</label>
+                                <input type="range" min="0" max="255" id="p0Green" step="1" value="77" onInput="playerColorChange()">
+                                <output for="p0Green" id="p0Green_out">77</output>
+                            </fieldset> 
+                            <fieldset>
+                                <label for="p0Blue">B</label>
+                                <input type="range" min="0" max="255" id="p0Blue" step="1" value="77" onInput="playerColorChange()">
+                                <output for="p0Blue" id="p0Blue_out">77</output>
+                            </fieldset>
+                        </div>
+                        <br>
+                        <span><button class="colorSave" id="saveP0Color" type="submit" onClick="setP0Color()">Save</button></span>
+                        <button class="colorClear" id="resetP0Color" type="submit" onClick="resetP0Color()">Reset</button>
+                    </div>
+                    <div class="progressBarWrapper">
+                    </div>
+                    <div class="middleGround">
+                        <div id="selectWrap">
+                            <div id="voiceSection">
+                            <select id="voiceSelect"></select>
+                            <br>
+                            <button id="voiceOnOff">Voice Off</button>
+                            </div>
+                        </div>
+                        <button class="btn-play"><i class="ion-ios-settings-outline"></i>Play</button>
+                    </div>
+                    <div class="progressBarWrapper">
+                    </div>
+                    <div class="backRight">
+                        <span>Name:</span>
+                        <span><input id="p1NameInput" type="text" maxlength="8" size="18" value="Player 2"></span>
+                        <br>
+                        <span><button class="nameSave" type="submit" onClick="setPlayer1Name()">Save</button></span>
+                        <button class="nameClear" type="submit" onClick="clearPlayer1Name()">Clear</button>
+                        <br><br><br><br>
+                        <div class="playerColorSelector">
+                            <fieldset>
+                                <label for="p1Red">R</label>
+                                <input type="range" min="0" max="255" id="p1Red" step="1" value="44" onInput="playerColorChange()">
+                                <output for="p1Red" id="p1Red_out">44</output>
+                            </fieldset>
+                            <fieldset>
+                                <label for="p1Green">G</label>
+                                <input type="range" min="0" max="255" id="p1Green" step="1" value="114" onInput="playerColorChange()">
+                                <output for="p1Green" id="p1Green_out">114</output>
+                            </fieldset> 
+                            <fieldset>
+                                <label for="p1Blue">B</label>
+                                <input type="range" min="0" max="255" id="p1Blue" step="1" value="158" onInput="playerColorChange()">
+                                <output for="p1Blue" id="p1Blue_out">158</output>
+                            </fieldset>
+                            <br>
+                        <span><button class="colorSave" id="saveP1Color" type="submit" onClick="setP1Color()">Save</button></span>
+                        <button class="colorClear" id="resetP1Color" type="submit" onClick="resetP1Color()">Reset</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+            
+    </body>
+</html> 

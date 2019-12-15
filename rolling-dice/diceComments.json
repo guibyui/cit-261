@@ -1,0 +1,74 @@
+[
+    {
+        "comment": {
+            "0": "You rolled a one.",
+            "1": "Well, that's too bad.",
+            "2": "Maybe next time.",
+            "3": "Bummer.",
+            "4": "",
+            "5": "There's a one in six chance every time. No matter what.",
+            "6": "So close!"
+        }
+        
+    },
+    {
+        "comment": {
+            "0": "You rolled a two.",
+            "1": "Better than nothing.",
+            "2": "Well, it could have been a one.",
+            "3": "Roll again, but with feeling this time.",
+            "4": "",
+            "5": "Maybe you should just keep what you've got.",
+            "6": "You can do better than that. Roll again."
+        }
+        
+    },
+    {
+        "comment": {
+            "0": "You rolled a three.",
+            "1": "Not bad, but not great.",
+            "2": "I guess they can't all be sixes.",
+            "3": "You can do better than that.",
+            "4": "",
+            "5": "No streak here. Pass this one.",
+            "6": "Don't slow down now."
+        }
+        
+    },
+    {
+        "comment": {
+            "0": "You rolled a four.",
+            "1": "A four. There you go!",
+            "2": "Not too shabby.",
+            "3": "Keep it going.",
+            "4": "",
+            "5": "Take a break. Give the other player a chance.",
+            "6": "Now for a five or six."
+        }
+        
+    },
+    {
+        "comment": {
+            "0": "You rolled a five.",
+            "1": "Five. Nice roll.",
+            "2": "Good one.",
+            "3": "Hey! A five!.",
+            "4": "",
+            "5": "I'd keep it.",
+            "6": "Roll again!"
+        }
+        
+    },
+    {
+        "comment": {
+            "0": "You rolled a six.",
+            "1": "Now we're talking.",
+            "2": "Nice.",
+            "3": "Six! Right on!",
+            "4": "",
+            "5": "Time to hold. You don't want to lose that one.",
+            "6": "I feel another six coming up."
+        }
+        
+    }
+]
