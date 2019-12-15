@@ -46,18 +46,18 @@
 				}
 			}
 		}
-		function deleteAllReviews()
-{
-    localStorage.setItem(window.location.href, "[]");
-    showAllNotes();
-}
+
+		function deleteAllReviews() {
+			localStorage.setItem(window.location.href, "[]");
+			showAllNotes();
+		}
 	</script>
 
 </head>
 
 <body onload="showAllNotes();show_image();show_TrailerMovies();">
 	<h1>Give us your opinion!</h1>
-	
+
 	<div id="imageDiv"></div>
 	<div id="trailers"></div>
 	<div id="note_entry_area">
@@ -95,10 +95,10 @@
 		<br>
 		<button onclick="saveNote()">Save</button>
 		<button onclick="window.history.back()">Bo Back to Movie options</button>
-        <button onclick="deleteAllReviews()">Delete All Reviews</button>
+		<button onclick="deleteAllReviews()">Delete All Reviews</button>
 		<div id="all_notes_display"></div>
 	</div>
-	
+
 
 	<!-- <script src="js/videoApi.js"></script> -->
 	<script src="js/review-image.js"></script>
