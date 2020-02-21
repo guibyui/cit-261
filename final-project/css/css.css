@@ -265,7 +265,7 @@ float: right;
 .form_style{
       position: absolute;
       left: 50%;
-      top: 18%;
+      /* top: 18%; */
 
       transform: translate(-50%, -50%);
 }
