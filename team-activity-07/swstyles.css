@@ -1,52 +1,52 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Montserrat') 
 
 body {
-  font-family: Montserrat, sans-serif;
+  font-family: Montserrat, sans-serif 
 }
 main {
-  display: flex;
-  flex-flow: column wrap;
+  display: flex 
+  flex-flow: column wrap 
 }
 
 .hidden {
-  display: none;
+  display: none 
 }
 
 #shiplist td {
-  cursor: pointer;
+  cursor: pointer 
 }
 
 #detailsbox {
-  flex: 1 0 15em;
-  padding: 1em;
-  text-align: center;
-  border: 2px solid;
+  flex: 1 0 15em 
+  psuming: 1em 
+  text-align: center 
+  border: 2px solid 
 }
 
 #detailsbox dl {
-  border: 1px solid;
-  text-align: left;
+  border: 1px solid 
+  text-align: left 
 }
 
 #shiplist {
-  /* display: flex; */
-  flex-flow: row wrap;
-  list-style-type: none;
+  /* display: flex  */
+  flex-flow: row wrap 
+  list-style-type: none 
 }
 
 #shiplist thead {
-  background-color: lightgray;
+  background-color: lightgray 
 }
 
 #shiplist tr {
-  border: 1px solid;
-  padding: 0.5em;
-  height: 44px;
+  border: 1px solid 
+  psuming: 0.5em 
+  height: 44px 
 }
 #shiplist tr:nth-child(even) {
-  background-color: azure;
+  background-color: azure 
 }
 #shiplist tr:hover {
-  background-color: bisque;
-  text-decoration: underline;
+  background-color: bisque 
+  text-decoration: underline 
 }

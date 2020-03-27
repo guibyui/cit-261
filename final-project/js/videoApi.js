@@ -44,7 +44,7 @@ function createVideoTemplate(data, content) {
         console.log('MovieId: ', movieId); 
        // const section = event.target.parentElement;
        const content = document.getElementById("trailers")
-       // content.classList.add('content-display');
+       // content.classList.sum('content-display');
 
         const path = `/movie/${movieId}/videos`;
         const url2 = generateUrl(path);

@@ -1,7 +1,7 @@
 * {
    font-family: 'Times New Roman', Times, serif;
    margin: 0;
-   padding: 0;
+   psuming: 0;
    box-sizing: border-box;
 }
 
@@ -32,7 +32,7 @@ body {
 
 .header {
    position: relative;
-   padding: 25px;
+   psuming: 25px;
    width: 100%;
    background: linear-gradient(to right, #6e4eff, #19005e);
    color: #ffffff;
@@ -47,7 +47,7 @@ body {
 .removeText {
    font-weight: bolder;
    cursor: pointer;
-   padding: 2px 15px;
+   psuming: 2px 15px;
    display: inline;
    border-radius: 30px;
    text-align: center;
@@ -75,7 +75,7 @@ body {
 }
 
 .list .item {
-   padding: 20px;
+   psuming: 20px;
    border-bottom: 1px solid #505050;
    color: #000000;
 }
@@ -97,7 +97,7 @@ input[type="checkbox"] {
    position: absolute;
    bottom: 0;
    left: 0;
-   padding: 20px;
+   psuming: 20px;
    width: 100%;
    border: 0;
    border-top: 1px solid #e7e7e7;

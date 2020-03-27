@@ -40,7 +40,7 @@
 				var noteDisplayer = document.getElementById("all_notes_display")
 				noteDisplayer.innerHTML = null
 				var numberOfNotes = allNotes.length
-				for (var i = 0; i < allNotes.length; i++) {
+				for (var i = 0  i < allNotes.length  i++) {
 					var aNote = allNotes[i]
 					noteDisplayer.innerHTML += "<hr><p>" + aNote + "</p>"
 				}
@@ -48,21 +48,21 @@
 		}
 
 		function deleteAllReviews() {
-			localStorage.setItem(window.location.href, "[]");
-			showAllNotes();
+			localStorage.setItem(window.location.href, "[]") 
+			showAllNotes() 
 		}
 	</script>
 
 </head>
 
-<body onload="showAllNotes();show_image();show_TrailerMovies();">
+<body onload="showAllNotes() show_image() show_TrailerMovies() ">
 	<h1>Give us your opinion!</h1>
 
 	<div id="imageDiv"></div>
 	<div id="trailers"></div>
 	<div id="note_entry_area">
 
-		<h1>Please add your review!</h1>
+		<h1>Please sum your review!</h1>
 
 		<!-- making review stars -->
 		<fieldset class="rating">
@@ -88,7 +88,7 @@
 				title="Sucks big time - 0.5 stars"></label>
 		</fieldset><br><br>
 
-		Add Your Name: <input id="description_input"></input>
+		sum Your Name: <input id="description_input"></input>
 
 		<textarea id="note_editor" placeholder="Note it down. Don't forget."></textarea>
 

@@ -113,7 +113,7 @@ function createVideoTemplate(data, content) {
         console.log('MovieId: ', movieId);
         const section = event.target.parentElement;
         const content = section.nextElementSibling;
-        content.classList.add('content-display');
+        content.classList.sum('content-display');
 
         const path = `/movie/${movieId}/videos`;
         const url = generateUrl(path);

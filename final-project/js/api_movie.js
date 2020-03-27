@@ -161,7 +161,7 @@ function createVideoTemplate(data, content) {
     }
     var div = document.createElement("div");
     div.id = "note_entry_area";
-    div.innerHTML = '<h1>Please add your review!</h1>' +
+    div.innerHTML = '<h1>Please sum your review!</h1>' +
 
         '<!-- making review stars --> <fieldset class="rating">' +
         '<input type="radio" id="star5" name="rating" value="5"><label class="full" for="star5" title="Awesome - 5 stars"></label>' +
@@ -176,7 +176,7 @@ function createVideoTemplate(data, content) {
         '<input type="radio" id="starhalf" name="rating" value="half"><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>' +
         '</fieldset><br><br>' +
 
-        'Add Your Name: <input id="description_input">' +
+        'sum Your Name: <input id="description_input">' +
 
         '<textarea id="note_editor" placeholder="Write your review here."></textarea>' +
 
@@ -209,7 +209,7 @@ document.onclick = function (event) {
         document.getElementById("movies").innerHTML = "<img src=\"" + target.currentSrc +
             "\" data-movie-id=\"" + target.dataset.movieId + "\">"
         const content = section.nextElementSibling;
-        content.classList.add('content-display');
+        content.classList.sum('content-display');
 
         const path = `/movie/${movieId}/videos`;
         const url = generateUrl(path);

@@ -152,7 +152,7 @@ img:hover {
 #content-close{
     position: absolute;
     cursor: pointer;
-    padding-left: 5px;
+    psuming-left: 5px;
 
 }
 
@@ -190,7 +190,7 @@ textarea{
 }
 #note_entry_area{
     width: auto;
-    padding-left: 5px;
+    psuming-left: 5px;
   border:none; 
   border-radius:5px; 
   box-shadow:0px 0px 5px #666666 inset; 
@@ -198,15 +198,15 @@ textarea{
   background-color: rgba(255, 90, 90, 0.4);
   margin-bottom: 15px;
   margin-top: 15px;
-  padding-bottom: 15px;
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
+  psuming-bottom: 15px;
+  psuming-top: 15px;
+  psuming-left: 15px;
+  psuming-right: 15px;
 }
 
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 
-fieldset, label { margin: 0; padding: 0; }
+fieldset, label { margin: 0; psuming: 0; }
 body{ margin: 20px; }
 h1 { font-size: 1.5em; margin: 10px; }
 
@@ -296,7 +296,7 @@ body{
     }
     #content-close {
         position: relative;
-        padding-left: 10px;
+        psuming-left: 10px;
 
     }
 
@@ -309,7 +309,7 @@ body{
     }
 
     section{
-        padding-top: 0px;
+        psuming-top: 0px;
     }
 
     #movies-searchable{
@@ -331,7 +331,7 @@ body{
 @media screen and (max-width: 1550px) and (min-width: 901px) {
     #content-close {
         position: inherit;
-        padding-left: 10px;
+        psuming-left: 10px;
     }
     body{
         width:96%;
@@ -351,12 +351,12 @@ body{
     }
 
     section {
-        padding-top: 70px;
+        psuming-top: 70px;
     }
 
     #content-close {
         position: inherit;
-        padding-left: 10px;
+        psuming-left: 10px;
     }
 
     /* #movies-searchable {
@@ -386,7 +386,7 @@ body{
     }
 
     section {
-        padding-top: 70px;
+        psuming-top: 70px;
     }
 
     /* #movies-searchable {
@@ -406,7 +406,7 @@ body{
 
     #content-close {
         position: relative;
-        padding-left: 10px;
+        psuming-left: 10px;
     }
 
     body {

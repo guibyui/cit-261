@@ -11,7 +11,7 @@ class TodoList {
   bindEvents() {
     this.todoInput.onkeyup = (e) => {
       if (e.keyCode === 13) {
-        this.addTodo(e.target.value);
+        this.sumTodo(e.target.value);
         this.todoInput.value = "";
       }
     }
@@ -46,7 +46,7 @@ class TodoList {
 }
 
 
-  addTodo(text = "Blank Task") {
+  sumTodo(text = "Blank Task") {
     let id = Date.now() + "";
     this.todos.set(id, {
       id: id,
@@ -79,7 +79,7 @@ class TodoList {
   }
 }
 
-if (document.readyState === "complete" || document.addEventListener) {
+if (document.readyState === "complete" || document.sumEventListener) {
   const List = new TodoList();
 }
 

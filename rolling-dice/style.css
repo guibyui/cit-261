@@ -3,84 +3,84 @@
 **********************************************/
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0 
+    psuming: 0 
+    box-sizing: border-box 
     
 }
 
 .clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
+    content: "" 
+    display: table 
+    clear: both 
 }
 
 body {
-    font-family: Lato;
-    font-weight: 300;
-    position: relative;
-    height: 100vh;
-    background: linear-gradient(90deg, rgb(235, 77, 77) 0%, rgb(44, 114, 158) 100%);
+    font-family: Lato 
+    font-weight: 300 
+    position: relative 
+    height: 100vh 
+    background: linear-gradient(90deg, rgb(235, 77, 77) 0%, rgb(44, 114, 158) 100%) 
 }
 
 .wrapper, .front, .back {
-    width: 800px;
-    height: 500px;
-    margin: 0px auto;
+    width: 800px 
+    height: 500px 
+    margin: 0px auto 
 }
 
 .front .back {
-    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3) 
 }
 
 .player-1-panel, .backRight {
-    width: 33%;
-    float: left;
-    height: 500px;
-    padding: 20px;
-    background-color: #fff;
+    width: 33% 
+    float: left 
+    height: 500px 
+    psuming: 20px 
+    background-color: #fff 
 }
 
 .player-0-panel, .backleft {
-    width: 33%;
-    float: left;
-    height: 500px;
-    padding: 20px;
-    background-color: #fff;
+    width: 33% 
+    float: left 
+    height: 500px 
+    psuming: 20px 
+    background-color: #fff 
 }
 
 .progressBarWrapper {
-    position: relative;
-    width: 2%;
-    float: left;
-    height: 500px;
+    position: relative 
+    width: 2% 
+    float: left 
+    height: 500px 
     background-color: #fff
 }
 
 .progressBars {
-    position: absolute;
-    bottom: 0%;
-    width: 100%;
-    float: left;
-    height: .0001%;
-    padding: 0px;
-    transition: height .75s ease-in-out;
+    position: absolute 
+    bottom: 0% 
+    width: 100% 
+    float: left 
+    height: .0001% 
+    psuming: 0px 
+    transition: height .75s ease-in-out 
 }
 
 #player-0-progressBar {
-    background-color: #EB4D4D;
+    background-color: #EB4D4D 
 }
 
 #player-1-progressBar {
-    background-color: #2C729E;
+    background-color: #2C729E 
 }
 
 .middleGround {
-    background: linear-gradient(90deg, #2C729E 0%, #EB4D4D 100%);
-    width: 30%;
-    float: left;
-    height: 500px;
-    padding: 0px;
+    background: linear-gradient(90deg, #2C729E 0%, #EB4D4D 100%) 
+    width: 30% 
+    float: left 
+    height: 500px 
+    psuming: 0px 
 }
 
 
@@ -89,248 +89,248 @@ body {
 **********************************************/
 
 .player-name {
-    font-size: 25px;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 100;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    position: relative;
+    font-size: 25px 
+    text-align: center 
+    text-transform: uppercase 
+    letter-spacing: 2px 
+    font-weight: 100 
+    margin-top: 20px 
+    margin-bottom: 10px 
+    position: relative 
     color: #2C729E
 }
 
 #name-0 {
-   color: #EB4D4D;
+   color: #EB4D4D 
 }
 
 #name-1 {
-   color: #2C729E; 
+   color: #2C729E  
 }
 
 .player-score {
-    text-align: center;
-    font-size: 80px;
-    font-weight: 100;
-    color: #EB4D4D;
-    margin-bottom: 80px;
+    text-align: center 
+    font-size: 80px 
+    font-weight: 100 
+    color: #EB4D4D 
+    margin-bottom: 80px 
 }
 
 #score-0 {
-    color: #EB4D4D;
+    color: #EB4D4D 
 }
 
 #score-1 {
-    color: #2C729E;
+    color: #2C729E 
 }
 
-.active .player-name { font-weight: 300; }
+.active .player-name { font-weight: 300  }
 
 .active .player-name:after {
-    content: "\2022";
-    font-size: 35px;
-    position: absolute;
-    color: inherit;
-    top: -4px;
-    right: 0px;
+    content: "\2022" 
+    font-size: 35px 
+    position: absolute 
+    color: inherit 
+    top: -4px 
+    right: 0px 
 }
 
 /*.active #name-1:after {
-    color: #2C729E;
+    color: #2C729E 
 }*/
 
 #player-0-box {
-    background-color: #EB4D4D;
-    color: #fff;
-    width: 40%;
-    margin: 0 auto;
-    padding: 12px;
-    text-align: center;
-    transition: outline .75s ease-in-out;
+    background-color: #EB4D4D 
+    color: #fff 
+    width: 40% 
+    margin: 0 auto 
+    psuming: 12px 
+    text-align: center 
+    transition: outline .75s ease-in-out 
 }
 
 #player-1-box {
     background-color: #2C729E
-;    color: #fff;
-    width: 40%;
-    margin: 0 auto;
-    padding: 12px;
-    text-align: center;
-    transition: outline .75s ease-in-out;
+     color: #fff 
+    width: 40% 
+    margin: 0 auto 
+    psuming: 12px 
+    text-align: center 
+    transition: outline .75s ease-in-out 
 }
 
 .player-current-box {
-    transition: outline .75s ease-in-out;
+    transition: outline .75s ease-in-out 
 }
 
 .player-current-label {
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    font-size: 12px;
-    color: #fff;
+    text-transform: uppercase 
+    margin-bottom: 10px 
+    font-size: 12px 
+    color: #fff 
 }
 
 .player-current-score {
-    font-size: 30px;
+    font-size: 30px 
 }
 
 fieldset{
-  border: none;
+  border: none 
 }
 
 button {
-    width: 200px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #555;
-    background: none;
-    border: none;
-    font-family: Lato;
-    font-size: 20px;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-weight: 300;
+    width: 200px 
+    left: 50% 
+    transform: translateX(-50%) 
+    color: #555 
+    background: none 
+    border: none 
+    font-family: Lato 
+    font-size: 20px 
+    text-transform: uppercase 
+    cursor: pointer 
+    font-weight: 300 
 }
 
-button:hover { font-weight: 600; }
-button:hover i { margin-right: 20px; }
+button:hover { font-weight: 600  }
+button:hover i { margin-right: 20px  }
 
 button:focus {
-    outline: none;
+    outline: none 
 }
 
 .nameSave, .colorSave {
-    width: 33pt;
-    float: right;
-    display: inline-block;
-    color: #555;
-    background: none;
-    border: #000 1pt solid;
-    font-family: Lato;
-    font-size: 15px;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-weight: 300;
-    border-radius: 5px;
-    padding: 2px 4px 2px 4px;
-    margin: 3px;
+    width: 33pt 
+    float: right 
+    display: inline-block 
+    color: #555 
+    background: none 
+    border: #000 1pt solid 
+    font-family: Lato 
+    font-size: 15px 
+    text-transform: uppercase 
+    cursor: pointer 
+    font-weight: 300 
+    border-radius: 5px 
+    psuming: 2px 4px 2px 4px 
+    margin: 3px 
     
 }
 
 .nameSave:hover, .colorSave:hover {
-    font-weight: 600;
+    font-weight: 600 
 }
 
 .nameSave:focus, .colorSave:focus {
-    outline: none;
+    outline: none 
 }
 
 input[type="text"] {
-    color: #555;
-    background: none;
-    font-family: Lato;
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: 300;
+    color: #555 
+    background: none 
+    font-family: Lato 
+    font-size: 15px 
+    text-transform: uppercase 
+    font-weight: 300 
 }
 
 .nameClear, .colorClear{
-    width: 40pt;
-    float: right;
-    display: inline-block;
-    color: #555;
-    background: none;
-    border: #000 1pt solid;
-    font-family: Lato;
-    font-size: 15px;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-weight: 300;
-    border-radius: 5px;
-    padding: 2px 3px 2px 3px;
-    margin: 3px;
+    width: 40pt 
+    float: right 
+    display: inline-block 
+    color: #555 
+    background: none 
+    border: #000 1pt solid 
+    font-family: Lato 
+    font-size: 15px 
+    text-transform: uppercase 
+    cursor: pointer 
+    font-weight: 300 
+    border-radius: 5px 
+    psuming: 2px 3px 2px 3px 
+    margin: 3px 
     
 }
 
 .nameClear:hover, .colorClear:hover {
-    font-weight: 600;
+    font-weight: 600 
 }
 
 .nameClear:focus, .colorClear:focus {
-    outline: none;
+    outline: none 
 }
 
 input[type="text"] {
-    color: #555;
-    background: none;
-    font-family: Lato;
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: 300;
+    color: #555 
+    background: none 
+    font-family: Lato 
+    font-size: 15px 
+    text-transform: uppercase 
+    font-weight: 300 
 }
 
 i {
-    color: #EB4D4D;
-    display: inline-block;
-    margin-right: 15px;
-    font-size: 32px;
-    line-height: 1;
-    vertical-align: text-top;
-    margin-top: -4px;
-    transition: margin 0.3s;
+    color: #EB4D4D 
+    display: inline-block 
+    margin-right: 15px 
+    font-size: 32px 
+    line-height: 1 
+    vertical-align: text-top 
+    margin-top: -4px 
+    transition: margin 0.3s 
 }
 
 .middleGround i {
-    color: #fff;
-    display: inline-block;
-    margin-right: 15px;
-    font-size: 32px;
-    line-height: 1;
-    vertical-align: text-top;
-    margin-top: -4px;
-    transition: margin 0.3s;
+    color: #fff 
+    display: inline-block 
+    margin-right: 15px 
+    font-size: 32px 
+    line-height: 1 
+    vertical-align: text-top 
+    margin-top: -4px 
+    transition: margin 0.3s 
 }
 
 .btn-new {
-    color:#fff;
-    position: relative;
-    top: 30px;
+    color:#fff 
+    position: relative 
+    top: 30px 
 }
 
 .btn-roll {
-    width: 100%;
-    margin: 50px 50% 0 50%;
-    font-size: 20px;
-    padding: 12px;
-    color: #EB4D4D;
-    text-align: center;
+    width: 100% 
+    margin: 50px 50% 0 50% 
+    font-size: 20px 
+    psuming: 12px 
+    color: #EB4D4D 
+    text-align: center 
 }
 
 #roll-1, #ion-1 {
-    color: #2C729E;
+    color: #2C729E 
 }
 
 .btn-hold {
-    color: #fff;
-    font-size: 20px;
-    position: relative;
-    top: 365px;
+    color: #fff 
+    font-size: 20px 
+    position: relative 
+    top: 365px 
 }
 
 .btn-settings, .btn-play {
-    /*text-align: center;*/
-    font-size: 20px;
-    color:#fff;
-    position: relative;
+    /*text-align: center */
+    font-size: 20px 
+    color:#fff 
+    position: relative 
 }
 
 .btn-settings {
-    top: 400px;
+    top: 400px 
 }
 
 .btn-play {
     
-    top: 460px;
+    top: 460px 
 }
 
 #diceID src {
@@ -338,14 +338,14 @@ i {
 }
 
 .dice {
-    position: relative;
-    z-index: 10;
-    height: 100px;
-    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.30);
+    position: relative 
+    z-index: 10 
+    height: 100px 
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.30) 
 }
 
-.winner { background-color: #f7f7f7; }
-.winner .player-name { font-weight: 300; color: #EB4D4D; }
+.winner { background-color: #f7f7f7  }
+.winner .player-name { font-weight: 300  color: #EB4D4D  }
 
 
 /**********************************************
@@ -353,86 +353,86 @@ i {
 **********************************************/
 
 .front, .back {
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
+    -webkit-backface-visibility: hidden 
+    -moz-backface-visibility: hidden 
+    position: absolute 
+    top: 0 
+    left: 0 
 }
 
 /* front pane, placed above back */
 .front {
-    z-index: 2;
+    z-index: 2 
 /*     for firefox 31 */
-    transform: rotateY(0deg);
-    -moz-transform: rotateY(0deg);
+    transform: rotateY(0deg) 
+    -moz-transform: rotateY(0deg) 
 }
 
 /* back, initially hidden pane */
 .back {
-    transform: rotateY(180deg);
+    transform: rotateY(180deg) 
 }
 
 .wrapper {
-    perspective: 1000px;
-    transform-style: preserve-3d;
+    perspective: 1000px 
+    transform-style: preserve-3d 
 }
 .flipWrapper {
-    margin-top: 50px;
-    transition: all .75s ease;
-    transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    position: relative;
+    margin-top: 50px 
+    transition: all .75s ease 
+    transform-style: preserve-3d 
+    -moz-transform-style: preserve-3d 
+    position: relative 
 }
 /*.panelFlip {
-    margin-top: 50px;
-    transition: all .75s ease;
-    transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    position: relative;
+    margin-top: 50px 
+    transition: all .75s ease 
+    transform-style: preserve-3d 
+    -moz-transform-style: preserve-3d 
+    position: relative 
 }*/
 
 /**********************************************
 *** back panel
 **********************************************/
 #selectWrap {
-    left: 50%;
-    transform: translateX(-50%);
-    margin: auto;
-    position: absolute;
-    top: 50px;
+    left: 50% 
+    transform: translateX(-50%) 
+    margin: auto 
+    position: absolute 
+    top: 50px 
 }
 
 #voiceSelect {
-    left: 50%;
-    transform: translateX(-50%);
-    margin: auto;
-    position: relative;
+    left: 50% 
+    transform: translateX(-50%) 
+    margin: auto 
+    position: relative 
 
 }
 #voiceOnOff {
-    left: 50%;
-    transform: translateX(-50%);
-    margin: auto;
-    position: relative;
-    width: 78pt;
-    color: #555;
-    background: #fff;
-    border: #000 1pt solid;
-    font-family: Lato;
-    font-size: 15px;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-weight: 300;
-    border-radius: 5px;
-    padding: 2px 4px 2px 4px;
-    margin: 3px;
+    left: 50% 
+    transform: translateX(-50%) 
+    margin: auto 
+    position: relative 
+    width: 78pt 
+    color: #555 
+    background: #fff 
+    border: #000 1pt solid 
+    font-family: Lato 
+    font-size: 15px 
+    text-transform: uppercase 
+    cursor: pointer 
+    font-weight: 300 
+    border-radius: 5px 
+    psuming: 2px 4px 2px 4px 
+    margin: 3px 
 
 }
 
-#voiceOnOff:hover { font-weight: 600; }
-/*.nameSave:hover i { margin-right: 20px; }*/
+#voiceOnOff:hover { font-weight: 600  }
+/*.nameSave:hover i { margin-right: 20px  }*/
 
 #voiceOnOff:focus {
-    outline: none;
+    outline: none 
 }
